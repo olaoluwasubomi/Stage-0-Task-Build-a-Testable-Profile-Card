@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card - Frontend Wizards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+        <figure class="avatar">
+          <img
+            src="https://i.pravatar.cc/150?img=3"
+            alt="User Avatar"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+      
+        <div class="profile-info">
+          <header>
+            <h2 data-testid="test-user-name">Olasubomi Esther</h2>
+          </header>
+      
+          <p data-testid="test-user-bio">
+            Frontend developer passionate about crafting user-friendly interfaces,
+            clean design, and accessible web applications.
+          </p>
+      
+          <p>
+            Current Time (ms): 
+            <span data-testid="test-user-time" id="currentTime"></span>
+          </p>
+      
+          <nav data-testid="test-user-social-links">
+            <ul>
+              <li><a href="#" data-testid="test-user-social-twitter">Twitter</a></li>
+              <li><a href="#" data-testid="test-user-social-github">GitHub</a></li>
+              <li><a href="#" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+            </ul>
+          </nav>
+      
+          <section data-testid="test-user-hobbies" class="list-section">
+            <h3>Hobbies</h3>
+            <ul>
+              <li>Coding</li>
+              <li>Reading</li>
+              <li>Travelling</li>
+            </ul>
+          </section>
+      
+          <section data-testid="test-user-dislikes" class="list-section">
+            <h3>Dislikes</h3>
+            <ul>
+              <li>Procrastination</li>
+              <li>Untidy code</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+      
+
+    <script src="script.js"></script>
+  </body>
+</html>
