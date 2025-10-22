@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="index.html" data-testid="nav-home">Home</a></li>
+          <li><a href="about.html" data-testid="nav-about">About Me</a></li>
+          <li><a href="contact.html" data-testid="nav-contact">Contact Us</a></li>
+        </ul>
+    </nav>
+      
+    <main>
+      <article class="contact-container">
+        <h1>Contact Us</h1>
+        <form id="contactForm" novalidate>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            data-testid="test-contact-name"
+            aria-describedby="error-name"
+          />
+          <p class="error" id="error-name" data-testid="test-contact-error-name"></p>
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            data-testid="test-contact-email"
+            aria-describedby="error-email"
+          />
+          <p class="error" id="error-email" data-testid="test-contact-error-email"></p>
+
+          
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            data-testid="test-contact-subject"
+            aria-describedby="error-subject"
+          />
+          <p class="error" id="error-subject" data-testid="test-contact-error-subject"></p>
+
+          
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            data-testid="test-contact-message"
+            aria-describedby="error-message"
+          ></textarea>
+          <p class="error" id="error-message" data-testid="test-contact-error-message"></p>
+
+          <button type="submit" data-testid="test-contact-submit">Submit</button>
+        </form>
+
+        <p id="successMessage" class="success" data-testid="test-contact-success" hidden>
+          Thank you! Your message has been sent successfully.
+        </p>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
